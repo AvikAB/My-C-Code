@@ -876,7 +876,7 @@ int main()
 }
 */
 // Print all the EVEN numbers from 5 to 50:
-/*
+
 #include<stdio.h>
 int main()
 {
@@ -886,9 +886,9 @@ int main()
         }
     }
 }
-*/
+
 // Print the factorial of a number n:
-/*
+
 #include<stdio.h>
 int main()
 {
@@ -902,10 +902,10 @@ int main()
     }
     printf("%d",fact);
 }
-*/
+
 
 // Print reverse of the table for a number n:
-/*
+
 #include<stdio.h>
 int main()
 {
@@ -916,7 +916,6 @@ int main()
         printf("%d\n", n*i);
     }
 }
-*/
 
 // FUNCTIONS:
 
@@ -925,7 +924,6 @@ int main()
 //ARRAYS:
 
 
-/*
 #include<stdio.h>
 int main()
 {
@@ -941,10 +939,10 @@ int main()
 
     printf("Physics = %d, Chemistry = %d, Math = %d\n", marks[0], marks[1], marks[2]);
 }
-*/
+
 
 //Write a program to enter price of 3 items & print their final cost with tax:
-/*
+
 #include<stdio.h>
 int main()
 {
@@ -959,12 +957,21 @@ int main()
     printf("Total Price of 3: %f\n", price[2]+(0.18*price[2]));
 
 }
-*/
+
+
+
+// If there word is LOWERCASE or UPPERCASE then print UPPERCASE and LOWERCASE:
 
 #include<stdio.h>
 int main()
 {
-    printf("I Love Hridika and Anonna");
+    char c;
+    scanf("%c", &c);
+    if(c>='a' && c<='z') {
+        printf("%c\n", c-('a'-'A'));
+    }else{
+        printf("%c\n", c+('a'-'A'));
+    }
 }
 
 
