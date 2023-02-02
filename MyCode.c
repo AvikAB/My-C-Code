@@ -989,6 +989,19 @@ int main()
     }
 }
 
+// Write a code which will be convert a number into years, months and days:
 
+#include<stdio.h>
+int main()
+{
+    long long int n,years,months,days;
+    scanf("%lld",&n);
+    years=n/365;
+    n=n%365;
+    months=n/30;
+    n=n%30;
+    days=n;
+    printf("%lld years\n%lld months\n%lld days\n", years,months,days);
+}
 
 
