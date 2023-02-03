@@ -1004,4 +1004,16 @@ int main()
     printf("%lld years\n%lld months\n%lld days\n", years,months,days);
 }
 
+// DETERMINANT:
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    scanf("%d%d", &a,&b);
+    scanf("%d%d", &c,&d);
+    int determinant=a*d-b*c;
+    printf("%d\n",determinant);
+}
+
 
