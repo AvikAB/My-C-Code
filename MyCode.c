@@ -1031,4 +1031,24 @@ int main()
 	}
 }
 
+// Integer Inputs and Then Print Reverse of that input with space:
+
+#include<stdio.h>
+int main()
+{
+    int t, n, i;
+    scanf("%d", &t);
+    for (i = 0; i < t; i++) {
+        scanf("%d", &n);
+        while (n != 0) {
+            printf("%d ", n % 10);
+            n /= 10;
+        }
+        printf("\n");
+    }
+}
+
+
+
+
 
