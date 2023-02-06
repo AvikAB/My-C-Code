@@ -1048,6 +1048,25 @@ int main()
     }
 }
 
+// C program to sum odd numbers:
+
+#include <stdio.h>
+
+int main() {
+    int t, x, y, i, sum;
+    scanf("%d", &t);
+    while (t--) {
+        scanf("%d%d", &x, &y);
+        sum = 0;
+        if (x % 2 == 0) x++;
+        if (y % 2 == 0) y--;
+        for (i = x + 2; i < y; i += 2) {
+            sum += i;
+        }
+        printf("%d\n", sum);
+    }
+    return 0;
+}
 
 
 
