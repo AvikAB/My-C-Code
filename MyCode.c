@@ -1068,6 +1068,16 @@ int main() {
     return 0;
 }
 
+//Print the table of n. Here n is a integer which user will input: (This is also used for any numbers table)
 
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int i=n; i<=n*10; i=i+n){
+        printf("%d\n", i);
+    }
+}
 
 
