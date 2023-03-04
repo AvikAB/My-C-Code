@@ -1080,4 +1080,131 @@ int main()
     }
 }
 
+//WAP to find the Prime Number:
 
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter a Number: ");
+    scanf("%d",&n);
+    for(int i=2;i<=n-1;i++){
+            if(n%i==0){
+                printf("Composite Number\n");
+                break;
+    }else{
+       printf("Prime Number\n");
+       break;
+        }
+    }
+}
+// Another code to solve this problem:
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter A Number: ");
+    scanf("%d",&n);
+    int a=0;
+    for(int i=2; i<=n-1; i++){
+        if(n%i==0){
+            a=1;
+            break;
+        }
+    }
+    if(a==0) printf("Prime Number\n");
+    else printf("Composite Number\n");
+}
+
+// WAP to count digits of a given number:
+
+#include<stdio.h>
+int main()
+{
+   int n;
+   printf("Enter A Number: ");
+   scanf("%d",&n);
+   int count=0;
+   while(n!=0){
+        n=n/10;
+        count++;
+   }
+   printf("The Number of Digits are %d\n",count);
+}
+
+//WAP to print sum of digits of a given number:
+
+#include<stdio.h>
+main()
+{
+    int n;
+    printf("Enter a Number: ");
+    scanf("%d", &n);
+    int sum=0;
+    int lastDigit=0;
+    while(n!=0){
+        lastDigit=n%10;
+        sum=sum+lastDigit;
+        n=n/10;
+    }
+    printf("The Sum of digits are %d\n",sum);
+}
+
+//WAP to print sum of all the even digits of a given number:
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter a Number: ");
+    scanf("%d",&n);
+    int sum=0;
+    int ld=0;
+    while(n!=0){
+        ld=n%10;
+        if(ld%2==0){
+            sum=sum+ld;
+        }
+        n=n/10;
+    }
+    printf("%d\n",sum);
+}
+*/
+
+// WAP to print sum of all the odd digits of a given number.
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter a Number: ");
+    scanf("%d",&n);
+    int sum=0;
+    int ld=0;
+    while(n!=0){
+        ld=n%10;
+        if(ld%2!=0){
+            sum=sum+ld;
+        }
+        n=n/10;
+    }
+    printf("%d\n",sum);
+}
+
+// WAP to print reverse of a given number:
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter A Number: ");
+    scanf("%d",&n);
+    int r=0;
+    while(n>0){
+        r=r*10;
+        r=r+(n%10);
+        n=n/10;
+    }
+    printf("The Reversed Number is %d\n",r);
+}
